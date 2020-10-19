@@ -40,4 +40,4 @@ public class Problem1 {
 
 // credit to https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/ for
 // help with implementation and https://www.youtube.com/watch?v=mW9Ajz3y_l0
-// for explanation of implementation.
+// to explain to me how the implementation works
