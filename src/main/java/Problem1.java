@@ -20,21 +20,24 @@ public class Problem1 {
         int temp;
         while (mid <= end) {
             if (nums[mid] == 0) {
-                temp = nums[start];
-                nums[start] = nums[mid];
-                nums[mid] = temp;
+                swap(nums, start, mid);
                 start++;
                 mid++;
             } else if (nums[mid] == 2) {
-                temp = nums[mid];
-                nums[mid] = nums[end];
-                nums[end] = temp;
+                swap(nums, mid, end);
                 end--;
             } else {
                 // nums[mid] == 1
                 mid++;
             }
         }
+    }
+
+    private static void swap(int[] nums, int left, int right) {
+        int temp;
+        temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
     }
 }
 
